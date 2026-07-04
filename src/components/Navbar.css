@@ -1,0 +1,84 @@
+.navbar{
+    align-self:center;
+    height: 20rem;
+    width: 75vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 20px;
+
+  
+}
+.self{
+    height: 90px;
+    border: 1px solid rgb(186, 184, 184);
+    border-radius: 10px;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(254, 255, 247);;
+}
+#label3{
+    color: rgb(31, 179, 43);
+    background-color:rgb(209, 243, 212) ;
+    display: inline-block;
+    padding: 5px;
+    height: 25px;
+    border-radius: 5px;
+    font-weight: bold;
+    font-size: 14px;
+}
+.me{
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
+.me h2{
+    color: rgb(43, 8, 134);
+}
+.me h3{
+    color: rgb(85, 63, 139);
+}
+#label1{
+    color: rgb(36, 122, 235);
+    background-color:  rgb(218, 231, 246);
+    display: inline-block;
+    padding: 5px;
+    height: 25px;
+    border-radius: 5px;
+    font-weight: bold;
+    font-size: 14px;
+}
+.rollno{
+    display: flex;
+    gap: 20px;
+}
+.rollno img{
+    width: 50px;
+    height: 40px;
+}
+.specify{
+    display: flex;
+    gap: 10px;
+}
+.notice{
+    height: 90px;
+    border: 1px solid rgb(186, 184, 184);
+    border-radius: 10px;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(254, 255, 247);
+    border-left: 5px solid rgb(33, 30, 237);
+}
+.navbar h4{
+    padding-left: 10px;
+}
+.allotroom{
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    font-size: 16.5px;
+}

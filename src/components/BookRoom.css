@@ -1,0 +1,82 @@
+.hosteltype
+{
+    display: flex;
+    gap: 50px;
+}
+.kalindi{
+    width: 35%;
+    color: rgb(22, 77, 149);
+    background-color:  rgb(218, 231, 246);
+    padding: 20px;
+    border: 2px solid rgb(143, 140, 140);
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    gap:20px;
+    text-align: center;
+}
+.iravati{
+    width: 35%;
+    color: rgb(22, 77, 149);
+    background-color:  rgb(218, 231, 246);
+    padding: 20px;
+    border: 2px solid rgb(143, 140, 140);
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    text-align: center;
+}
+.nav-hostel{
+    /* display: inline-block; */
+    background-color: rgb(68, 104, 204);
+    padding: 10px;
+    padding-left: 15px;
+    padding-right: 15px;
+    border-radius: 10px;
+    color: aliceblue;
+    text-decoration: none;
+    width: 100%;
+    text-align: center;
+
+}
+.choose{
+    display: flex;
+    flex-direction: column;
+    background-color:  rgb(237, 243, 250);
+    height: 180px;
+    border-radius: 20px;
+    padding: 15px;
+    align-items: center;
+    justify-content: space-evenly;
+    border: 2px solid rgb(143, 140, 140);
+}
+.grid{
+    margin-top: 20px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 25px;
+}
+#bookit{
+    background-color: rgb(68, 104, 204);
+    padding: 10px;
+    padding-left: 15px;
+    padding-right: 15px;
+    border-radius: 10px;
+    color: aliceblue;
+    text-decoration: none;
+    width: 100%;
+    text-align: center;
+}
+#beds{
+    display: flex;
+    gap: 10px;
+}
+#beds button{
+    padding: 5px;
+    border-radius: 7px;
+    width: 30px;
+    background-color:rgb(222, 246, 225);
+    font-weight: bold;
+    color: rgb(14, 104, 38);
+}

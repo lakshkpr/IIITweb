@@ -1,0 +1,160 @@
+.cards{
+    width: 75vw;
+    display: flex;
+    gap: 30px;
+}
+#d1{
+    width: 58%;
+    background-color: rgb(254, 255, 247);
+    height: 650px;
+    border: 2px solid rgb(192, 189, 189);
+    border-radius: 25px;
+    padding: 25px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+}
+.second{
+    display: flex;
+    flex-direction: column;
+    height: 650px;
+    padding: 0px;
+    margin-bottom: 20px;
+}
+#d2{
+    height: 60%;
+    width: 100%;
+    background-color: rgb(254, 255, 247);
+    padding: 30px;
+    border: 2px solid rgb(192, 189, 189);
+    border-radius: 25px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+
+}
+#d3{
+    height: 50%;
+    width: 100%;
+    padding: 25px;
+     border: 2px solid rgb(192, 189, 189);
+    border-radius: 25px;
+    background-color: rgb(254, 255, 247);
+    display: flex;
+    flex-direction: column;
+    gap: 18.5px;
+}
+.opens{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 5px;
+    align-items: center;
+}
+.closes{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 5px;
+    align-items: center;
+}
+#dull{
+    font-size: 14px;
+    color:rgb(138, 136, 136);
+}
+.timing{
+    border-top: 1px solid rgb(220, 218, 218);
+}
+.nav-book{
+    display: inline-block;
+    background-color: rgb(73, 70, 237);
+    padding: 10px;
+    padding-left: 15px;
+    padding-right: 15px;
+    border-radius: 10px;
+    color: aliceblue;
+    text-decoration: none;
+}
+.nav-group
+{
+    color: rgb(20, 17, 201);
+    background-color: rgb(219, 219, 242);
+    display: inline-block;
+    padding: 10px;
+    padding-left: 15px;
+    padding-right: 15px;
+    border-radius: 15px;
+    text-decoration: none;
+    width: 100%;
+    font-weight: bold;
+    text-align: center;
+}
+#green{
+    color: rgb(31, 179, 43);
+    background-color:rgb(209, 243, 212) ;
+    display: inline-block;
+    padding: 10px;
+    width: 100%;
+    padding-left: 15px;
+    padding-right: 15px;
+    border-radius: 15px;
+    font-weight: bold;
+    font-size: 15px;
+}
+#blue{
+    color: rgb(36, 122, 235);
+    background-color:  rgb(218, 231, 246);
+    display: inline-block;
+    padding: 10px;
+    width: 100%;
+    padding-left: 15px;
+    padding-right: 15px;
+    border-radius: 15px;
+    font-weight: bold;
+    font-size: 15px;
+}
+.head1{
+    display: flex;
+    align-items: center;
+    gap: px;
+    width: 100%;
+}
+.browseRoom{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+}
+.browseRoom p{
+    color: rgb(138, 136, 136);
+    font-weight: bold;
+}
+.browseRoom img{
+    height: 70px;
+    width: 90px;
+    padding-right: 10px;
+}
+
+.head2{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.head3{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.head1 img{
+    height: 40px;
+   
+}
+.head2 img{
+    height: 30px;
+   
+}
+.head3 img{
+    height: 30px;
+   
+}
