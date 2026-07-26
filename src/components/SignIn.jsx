@@ -50,7 +50,7 @@ const SignIn = () => {
         <div className="second">
             <div className="title">
                 <h2>Welcome Back</h2>
-                <p>Lorem ipsum dolbkjdshfksj sunt.</p>
+                <p>Online Hostel alocation system</p>
             </div>
             <div className="card">
                 <div className="item1">
