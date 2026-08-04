@@ -1,123 +1,146 @@
-.navbar{
-    align-self:center;
-    height: 20rem;
+.navbar {
+    align-self: center;
     width: 75vw;
     display: flex;
     flex-direction: column;
     justify-content: center;
     gap: 20px;
-
-  
+    margin-bottom: 20px;
 }
-.self{
-    height: 90px;
+
+.self {
+    /* FIXED: Removed fixed height to allow vertical text wrapping */
+    min-height: 90px; 
+    height: auto;
     border: 1px solid rgb(186, 184, 184);
     border-radius: 10px;
-    padding: 20px;
+    padding: 15px 20px;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: rgb(254, 255, 247);;
+    background-color: rgb(254, 255, 247);
+    flex-wrap: wrap; /* Allows labels to drop below if name is long */
+    gap: 15px;
 }
-#label3{
-    color: rgb(31, 179, 43);
-    background-color:rgb(209, 243, 212) ;
-    display: inline-block;
-    padding: 5px;
-    height: 25px;
-    border-radius: 5px;
-    font-weight: bold;
-    font-size: 14px;
-}
-.me{
+
+.rollno {
     display: flex;
-    flex-direction: column;
-    gap: 6px;
-}
-.me h2{
-    color: rgb(43, 8, 134);
-}
-.me h3{
-    color: rgb(85, 63, 139);
-}
-#label1{
-    color: rgb(36, 122, 235);
-    background-color:  rgb(218, 231, 246);
-    display: inline-block;
-    padding: 5px;
-    height: 25px;
-    border-radius: 5px;
-    font-weight: bold;
-    font-size: 14px;
-}
-.rollno{
-    display: flex;
+    align-items: center;
     gap: 20px;
 }
-.rollno img{
+
+.rollno img {
     width: 50px;
     height: 40px;
+    object-fit: contain;
 }
-.specify{
+
+.me {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+.me h2 {
+    color: rgb(43, 8, 134);
+    font-size: 1.5rem;
+    line-height: 1.2;
+}
+
+.me h3 {
+    color: rgb(85, 63, 139);
+    font-size: 1.1rem;
+}
+
+.specify {
     display: flex;
     gap: 10px;
+    flex-wrap: wrap; /* Keeps badges clean on mobile devices */
 }
-.notice{
-    height: 90px;
+
+#label1, #label2, #label3 {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 6px 12px;
+    border-radius: 5px;
+    font-weight: bold;
+    font-size: 13px;
+    white-space: nowrap;
+}
+
+#label1, #label2 {
+    color: rgb(36, 122, 235);
+    background-color: rgb(218, 231, 246);
+}
+
+#label3 {
+    color: rgb(31, 179, 43);
+    background-color: rgb(209, 243, 212);
+}
+
+.navbar h4 {
+    padding-left: 5px;
+    margin-top: 10px;
+}
+
+.notice {
+    /* FIXED: Changed to auto height with explicit padding constraints */
+    height: auto; 
+    min-height: 90px;
     border: 1px solid rgb(186, 184, 184);
     border-radius: 10px;
-    padding: 20px;
+    padding: 15px 20px;
     display: flex;
     justify-content: space-between;
     align-items: center;
     background-color: rgb(254, 255, 247);
     border-left: 5px solid rgb(33, 30, 237);
+    gap: 20px;
 }
-.navbar h4{
-    padding-left: 10px;
-}
-.allotroom{
+
+.allotroom {
     display: flex;
     flex-direction: column;
     gap: 6px;
-    font-size: 16.5px;
+    font-size: 15px;
+    flex: 1; /* Lets text safely stretch into empty row space */
 }
+
+.allotroom h5 {
+    font-size: 1.1rem;
+    color: #111;
+}
+
+/* --- MOBILE & TABLET MEDIA QUERIES --- */
 @media screen and (max-width: 1024px) {
     .navbar {
         width: 90vw;
-        height: auto;
     }
 }
+
 @media screen and (max-width: 768px) {
     .navbar {
         width: 100%;
-        padding: 0 15px;
-        height: auto;
+        padding: 0 10px;
+    }
+
+    .self {
+        flex-direction: column;
+        align-items: flex-start;
         gap: 15px;
     }
 
-    .self, .notice {
-        height: auto;
-        flex-direction: column; 
-        align-items: flex-start; 
-        gap: 15px;
-        padding: 15px;
+    .notice {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 12px;
     }
-
-    .rollno {
-        align-items: center;
-    }
-
-    .specify {
-        flex-wrap: wrap; 
-        gap: 8px;
-    }
-
-    .me h2 {
-        font-size: 1.3rem;
-    }
-
-    .me h3 {
-        font-size: 1rem;
+    
+    /* Forces timestamps down below notice headers seamlessly */
+    .notice > p {
+        align-self: flex-end;
+        font-size: 12px;
+        color: #666;
     }
 }
