@@ -78,7 +78,7 @@ function App() {
   return (
     <div className='container'>
       <RouterProvider router={router}/>
-      hello dosto
+      hey dude!
     </div>
   )
 }
