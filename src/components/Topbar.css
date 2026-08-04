@@ -47,28 +47,59 @@
     margin-left: 20px;
 }
 
+/* --- APPEND THIS CORRECTED BLOCK TO THE VERY BOTTOM OF YOUR TOPBAR.CSS --- */
+
 @media screen and (max-width: 768px) {
+    /* 1. Force the main bar container to expand naturally when items stack */
     .topbar {
-        height: 60px; 
-        padding: 0px 15px; 
+        height: auto !important;
+        min-height: 70px !important;
+        padding: 12px 15px !important;
+        display: flex !important;
+        flex-direction: column !important; /* Stacks elements vertically on phone */
+        align-items: center !important;
+        gap: 10px !important;
+        width: 100vw !important;
+        text-align: center;
     }
 
-    .topbar-left gap {
-        gap: 10px;
+    /* 2. Container holding the logo and text header */
+    .topbar-left {
+        display: flex !important;
+        align-items: center !important;
+        justify-content: center !important;
+        gap: 10px !important;
+        width: 100% !important;
     }
 
     .topbar-left img {
-        height: 35px;
-        width: 35px;
+        height: 35px !important;
+        width: 35px !important;
     }
 
     .topbar-left h1 {
-        font-size: 1.2rem;
+        font-size: 1.3rem !important;
+        white-space: nowrap !important;
     }
 
-    .logout-btn {
-        padding: 6px 14px; 
-        font-size: 0.9rem;
+    /* 3. Targets that stray '* Hostel Allocation Process' text element directly */
+    .topbar p, 
+    .topbar span, 
+    .topbar h2,
+    .topbar div:not(.topbar-left) h4 { 
+        font-size: 0.9rem !important;
+        margin: 2px 0 !important;
+        font-weight: 600 !important;
+        color: #333 !important;
+    }
+
+    /* 4. Fixes the Logout button formatting so it doesn't stretch completely */
+    .logout-btn, 
+    .topbar button {
+        padding: 6px 16px !important;
+        font-size: 0.9rem !important;
+        width: auto !important; /* Prevents button blowing up full width */
+        margin-top: 4px !important;
     }
 }
 
