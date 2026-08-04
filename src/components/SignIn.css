@@ -132,3 +132,59 @@
     text-align: center;
     font-size: 17px;
 }
+@media screen and (max-width: 1024px) {
+    .second {
+        width: 80%;
+    }
+    .first {
+        width: 75%;
+    }
+}
+
+/* Mobile Devices (e.g. under 768px) */
+@media screen and (max-width: 768px) {
+    .myhome {
+        flex-direction: column; /* Stack panels vertically */
+        height: auto;
+        min-height: 100vh;
+    }
+    
+    #first {
+        width: 100%;
+        padding: 40px 20px;
+        height: auto;
+    }
+
+    .first {
+        width: 90%;
+    }
+
+    .first h1 {
+        font-size: 1.8rem;
+    }
+
+    #second {
+        width: 100%;
+        padding: 30px 15px;
+        height: auto;
+    }
+
+    .second {
+        width: 100%;
+        max-width: 450px; /* Limits blowout on larger phablets */
+        height: auto;
+        gap: 20px;
+    }
+
+    .card {
+        padding: 25px 20px;
+        height: auto;
+        gap: 15px;
+    }
+
+    .error-text {
+        display: block;
+        margin-top: 4px;
+    }
+}
+
