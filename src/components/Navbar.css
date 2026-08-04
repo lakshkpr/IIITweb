@@ -82,3 +82,42 @@
     gap: 6px;
     font-size: 16.5px;
 }
+@media screen and (max-width: 1024px) {
+    .navbar {
+        width: 90vw;
+        height: auto;
+    }
+}
+@media screen and (max-width: 768px) {
+    .navbar {
+        width: 100%;
+        padding: 0 15px;
+        height: auto;
+        gap: 15px;
+    }
+
+    .self, .notice {
+        height: auto;
+        flex-direction: column; 
+        align-items: flex-start; 
+        gap: 15px;
+        padding: 15px;
+    }
+
+    .rollno {
+        align-items: center;
+    }
+
+    .specify {
+        flex-wrap: wrap; 
+        gap: 8px;
+    }
+
+    .me h2 {
+        font-size: 1.3rem;
+    }
+
+    .me h3 {
+        font-size: 1rem;
+    }
+}
