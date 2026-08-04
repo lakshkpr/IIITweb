@@ -46,3 +46,38 @@
     font-size: 15px;
     margin-left: 20px;
 }
+/* Tablet & Mobile Screens */
+@media screen and (max-width: 768px) {
+  .topbar {
+    width: 100vw;              
+    padding: 10px 20px;         
+    height: auto;              
+    min-height: 60px;
+    border-bottom-left-radius: 0px;  
+    border-bottom-right-radius: 0px;
+  }
+
+  .una {
+    gap: 8px;                   /* Tighten spacing between logo and text */
+  }
+
+  .una h2 {
+    font-size: 16px;            
+  }
+
+  .una p {
+    font-size: 12px;        
+    margin-left: 10px;  
+  }
+
+  .nav-logout {
+    padding: 8px 12px;         
+    font-size: 14px;
+    height: auto;              
+  }
+}
+@media screen and (max-width: 480px) {
+  .una p {
+    display: none;            
+  }
+}
