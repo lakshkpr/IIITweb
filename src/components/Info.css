@@ -18,3 +18,25 @@
     color: aliceblue;
     text-decoration: none;
 }
+
+@media screen and (max-width: 768px) {
+    .links {
+        gap: 15px;
+        padding-bottom: 15px;
+        overflow-x: auto;
+        white-space: nowrap;
+        width: 100%;
+        -webkit-overflow-scrolling: touch;
+    }
+    .links::-webkit-scrollbar {
+        display: none;
+    }
+    .links {
+        -ms-overflow-style: none;
+        scrollbar-width: none;
+    }
+    .nav-btn {
+        padding: 8px 12px;
+        font-size: 15px;
+    }
+}
