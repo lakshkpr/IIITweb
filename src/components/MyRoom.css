@@ -158,3 +158,42 @@
     height: 30px;
    
 }
+
+@media screen and (max-width: 1024px) {
+    .cards {
+        width: 90vw;
+        gap: 20px;
+    }
+    #d1 {
+        width: 50%;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .cards {
+        flex-direction: column;
+        width: 100%;
+        padding: 0 15px;
+        gap: 25px;
+    }
+    #d1 {
+        width: 100%;
+        height: auto;
+        padding: 20px;
+    }
+    .second {
+        width: 100%;
+        height: auto;
+        gap: 25px;
+    }
+    #d2, #d3 {
+        width: 100%;
+        height: auto;
+        padding: 20px;
+    }
+    .nav-group {
+        margin-top: -10px;
+        margin-bottom: 10px;
+    }
+}
+
