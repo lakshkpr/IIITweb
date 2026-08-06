@@ -95,7 +95,7 @@
     .hosteltype {
         flex-direction: column; /* Stack Kalindi and Iravati cards vertically */
         gap: 20px;
-        width: 100%;
+        width: 85%;
         padding: 0 10px;
     }
 
@@ -107,11 +107,12 @@
     .grid {
         grid-template-columns: 1fr; /* Display room options in a vertical list single-column stream */
         gap: 15px;
+        padding: 20px;
     }
 
     .choose {
         height: auto; /* Drops strict 180px constraint so text lines wrap smoothly */
-        padding: 20px 15px;
-        gap: 15px;
+        padding: 15px 15px;
+        gap: 10px;
     }
 }
