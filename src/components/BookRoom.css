@@ -82,37 +82,54 @@
 }
 @media screen and (max-width: 1024px) {
     .kalindi, .iravati {
-        width: 45%; /* Expanding cards horizontally when container width changes */
+        width: 45%;
     }
     .grid {
-        grid-template-columns: repeat(2, 1fr); /* Collapse room grids from 4 cols down to 2 */
+        grid-template-columns: repeat(2, 1fr);
         gap: 20px;
     }
 }
 
-/* Mobile Devices and Phones (Under 768px) */
+@media screen and (max-width: 1024px) {
+    .kalindi, .iravati {
+        width: 45%; 
+    }
+    .grid {
+        grid-template-columns: repeat(2, 1fr); 
+        gap: 20px;
+    }
+}
+
 @media screen and (max-width: 768px) {
     .hosteltype {
-        flex-direction: column; /* Stack Kalindi and Iravati cards vertically */
+        flex-direction: column; /* Stacks the hostel option cards vertically */
         gap: 20px;
-        width: 85%;
+        width: 100%;
         padding: 0 10px;
     }
 
     .kalindi, .iravati {
-        width: 100%; /* Take full layout width on mobile panels */
+        width: 100%; 
         padding: 25px 20px;
     }
 
+
     .grid {
-        grid-template-columns: 1fr; /* Display room options in a vertical list single-column stream */
-        gap: 15px;
-        padding: 20px;
+        grid-template-columns: repeat(2, 1fr) !important; 
+        gap: 12px !important; /* Slightly tighter gap so it fits clean on small screens */
     }
 
     .choose {
-        height: auto; /* Drops strict 180px constraint so text lines wrap smoothly */
-        padding: 15px 15px;
+        height: auto; 
+        padding: 15px 10px;
         gap: 10px;
     }
+
+    /* Keeps bed indicators clean inside the tighter 2-column blocks */
+    #beds {
+        gap: 5px;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
 }
+
