@@ -94,3 +94,38 @@
     font-weight: bold;
     font-size: 19px;
 }
+@media screen and (max-width: 768px) {
+    .max {
+        flex-direction: column; /* Stack informational alert block elements cleanly */
+        text-align: center;
+        font-size: 15px;
+        padding: 15px;
+    }
+
+    .write p {
+        margin-bottom: 4px;
+    }
+
+    .group {
+        flex-direction: column; /* Stacks 'Create Group' and 'Invitations' panels vertically */
+        gap: 20px;
+    }
+
+    .create, .invite {
+        width: 100%; /* Spans across full viewport bounds */
+        height: auto; /* Erases strict 300px limit to avoid inner element collisions */
+        padding: 20px;
+        gap: 20px;
+    }
+    
+    #red {
+        height: auto; /* Allows dynamic internal message sizing */
+        min-height: 80px;
+        font-size: 16px;
+        padding: 15px;
+    }
+
+    .head1, .head2 {
+        gap: 8px;
+    }
+}
