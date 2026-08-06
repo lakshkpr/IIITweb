@@ -26,7 +26,7 @@ const MyGroup = () => {
             <img src={GroupImg} alt="" />
             <h3>Create a group</h3>
         </div>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere, expedita!</p>
+        <p>Create a group and send invitations to your Roommates!</p>
         <input type="text" 
         placeholder='Group name (required)'
         value={grpname}
