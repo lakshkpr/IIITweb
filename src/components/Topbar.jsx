@@ -14,9 +14,9 @@ const Topbar = () => {
             <h2>IIIT Una</h2>
             <p>* Hostel Allocation Process</p>
         </div>
-        <NavLink to={'/'}
+        {/* <NavLink to={'/'}
         className={'nav-logout'}
-        onClick={()=>dispatch(setroll(''))}>Logout</NavLink>
+        onClick={()=>dispatch(setroll(''))}>Logout</NavLink> */}
     </div>
   )
 }
