@@ -80,3 +80,38 @@
     font-weight: bold;
     color: rgb(14, 104, 38);
 }
+@media screen and (max-width: 1024px) {
+    .kalindi, .iravati {
+        width: 45%; /* Expanding cards horizontally when container width changes */
+    }
+    .grid {
+        grid-template-columns: repeat(2, 1fr); /* Collapse room grids from 4 cols down to 2 */
+        gap: 20px;
+    }
+}
+
+/* Mobile Devices and Phones (Under 768px) */
+@media screen and (max-width: 768px) {
+    .hosteltype {
+        flex-direction: column; /* Stack Kalindi and Iravati cards vertically */
+        gap: 20px;
+        width: 100%;
+        padding: 0 10px;
+    }
+
+    .kalindi, .iravati {
+        width: 100%; /* Take full layout width on mobile panels */
+        padding: 25px 20px;
+    }
+
+    .grid {
+        grid-template-columns: 1fr; /* Display room options in a vertical list single-column stream */
+        gap: 15px;
+    }
+
+    .choose {
+        height: auto; /* Drops strict 180px constraint so text lines wrap smoothly */
+        padding: 20px 15px;
+        gap: 15px;
+    }
+}
