@@ -25,9 +25,9 @@ const MyRoom = () => {
              <div id='d2'>
                 <div className="head2">
                     <img src={GroupImg} alt="" />
-                    <h3>Groupimg Window</h3>
+                    <h3>Grouping Window</h3>
                 </div>
-                <p id='green'>Groupimg Window Open, Choose your roommates!</p>
+                <p id='green'>Grouping Window Open, Choose your roommates!</p>
                 <h3>BTECH 2025</h3>
                 <div className="timing">
                     <div className="opens">
